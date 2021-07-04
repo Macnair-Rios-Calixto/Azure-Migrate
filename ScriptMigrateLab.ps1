@@ -2,7 +2,7 @@
 Install-WindowsFeature -Name Hyper-V -IncludeManagementTools -Restart
 
 ## Preparando a rede do Hyper-V 
-# Criar um novo Switch em modo NAT
+# Criar um novo Switch interno para o NAT
 New-VMSwitch -Name "InternalSwitchNAT" -SwitchType Internal
 
 # Checcando os indexes das interfaces de rede
